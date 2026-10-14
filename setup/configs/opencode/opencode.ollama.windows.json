@@ -1,0 +1,24 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://localhost:11434/v1"
+      },
+      "models": {
+        "qwen-coder-16k": {
+          "name": "Qwen3-Coder-30B-A3B (16k context, Medium tier)"
+        }
+      }
+    }
+  },
+  "model": "ollama/qwen-coder-16k",
+  "mcp": {
+    "matlab": {
+      "type": "local",
+      "command": ["C:\\Users\\yourname\\.matlab\\agentic-toolkits\\bin\\matlab-mcp-server-windows-x64.exe", "--disable-telemetry=true"],
+      "enabled": true
+    }
+  }
+}

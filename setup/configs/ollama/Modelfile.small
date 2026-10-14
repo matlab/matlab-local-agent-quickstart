@@ -1,0 +1,4 @@
+# Small tier: Gemma 4 12B QAT, Q4 with an explicit 12k context.
+# Build with:  ollama create gemma-small -f Modelfile.small
+FROM gemma4:12b-it-qat
+PARAMETER num_ctx 12288
